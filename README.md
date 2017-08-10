@@ -8,9 +8,9 @@ The certification exam covers all of the aspects of building an application that
 - [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
 - [Watson Developer Cloud API Documentation](http://ibm.co/2mU4Bnp)
 
-The aim of this doc is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9). 
+The aim of this doc is to provide a more consolidated view of the required reading and study that is outlined in the [IBM Watson Professional Certification Program Study Guide Series](http://ibm.co/2iYtyP9).
 
-The Watson services are constantly evolving so always reference back to the [Watson Documentation](http://ibm.co/2mU4Bnp). Please also feel free to contribute or provide feedback if you see anything that is incorrect. 
+The Watson services are constantly evolving so always reference back to the [Watson Documentation](http://ibm.co/2mU4Bnp). Please also feel free to contribute or provide feedback if you see anything that is incorrect.
 
 [Watson is accessed through IBM Bluemix](http://ibm.co/2jdqk8s)
 ### [Check out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
@@ -50,7 +50,7 @@ The Watson services are constantly evolving so always reference back to the [Wat
  - [3.10 Explain and configure Retrieve and Rank service.](#310-explain-and-configure-retrieve-and-rank-service)
 
 - [Section 4 - Developing Cognitive applications using Watson Developer Cloud Services](#section-4---developing-cognitive-applications-using-watson-developer-cloud-services)
- 
+
  - [4.1 Call a Watson API to analyze content.](#41-call-a-watson-api-to-analyze-content)
  - [4.2 Describe the tasks required to implement the Conversational Agent / Digital Bot.](#42-describe-the-tasks-required-to-implement-the-conversational-agent--digital-bot)
  - [4.3 Transform service outputs for consumption by other services.](/#43-transform-service-outputs-for-consumption-by-other-services)
@@ -69,21 +69,21 @@ The Watson services are constantly evolving so always reference back to the [Wat
 ## Section 1 - Fundamentals of Cognitive Computing
 ### 1.1. Define the main characteristics of a cognitive system.
 
-- Cognitive systems understand, reason and learn 
- - Must understand structured and unstructured data 
- - Must reason by prioritizing recommendations and ability to form hypothesis 
- - Learns iteratively by repeated training as it build smarter patterns 
-- Cognitive systems are here to augment human knowledge not replace it 
-- Cognitive systems employ machine learning technologies 
- - Supervised learning versus unsupervised learning 
-- Cognitive systems use natural language processing 
+- Cognitive systems understand, reason and learn
+ - Must understand structured and unstructured data
+ - Must reason by prioritizing recommendations and ability to form hypothesis
+ - Learns iteratively by repeated training as it build smarter patterns
+- Cognitive systems are here to augment human knowledge not replace it
+- Cognitive systems employ machine learning technologies
+ - Supervised learning versus unsupervised learning
+- Cognitive systems use natural language processing
 
 ### 1.2 Explain neural nets.
 
 https://github.com/cazala/synaptic/wiki/Neural-Networks-101
 
-- Neural Nets mimic how neurons in the brain communicate. 
-- Neural networks are models of biological neural structures. 
+- Neural Nets mimic how neurons in the brain communicate.
+- Neural networks are models of biological neural structures.
 
 Neurons are the basic unit of a neural network. In nature, neurons have a number of dendrites (inputs), a cell nucleus (processor) and an axon (output). When the neuron activates, it accumulates all its incoming inputs, and if it goes over a certain threshold it fires a signal thru the axon.. sort of. The important thing about neurons is that they can learn.
 
@@ -100,13 +100,13 @@ A neural network learns by training. The algorithm used to do this is called bac
 
 #### 1.2.1.1. Explain the role of synapse and neuron
 
-- A nueron operates by recieving signals from other nuerons through connections called synapses. 
+- A nueron operates by recieving signals from other nuerons through connections called synapses.
 
 #### 1.2.1.2. Understand weights and bias
 
 - For each nueron input there is a weight (the weight of that specific connection).
-- When a artifical neuron activates if computes its state by adding all the incoming inputs multiplied by it's corresponding connection weight. 
-- But Neurons always have one extra input, the bias which is always 1 and has it's own connection weight. THis makes sure that even when all other inputs are none there's going to be activation in the nueron. 
+- When a artifical neuron activates if computes its state by adding all the incoming inputs multiplied by it's corresponding connection weight.
+- But Neurons always have one extra input, the bias which is always 1 and has it's own connection weight. THis makes sure that even when all other inputs are none there's going to be activation in the nueron.
 
 ![Weights and Bias](https://qph.ec.quoracdn.net/main-qimg-31d260a826ec73fce99ae098be5a7351)
 
@@ -116,7 +116,7 @@ A neural network learns by training. The algorithm used to do this is called bac
 
 #### 1.2.1.4. Explain forward and backward propagation
 
-##### Feed Forward Propagation 
+##### Feed Forward Propagation
 
 A feedforward neural network is an artificial neural network wherein connections between the units do not form a cycle. As such, it is different from recurrent neural networks.
 In this network, the information moves in only one direction, forward, from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.
@@ -125,7 +125,7 @@ Video:
 [![Neural Networks Demystified Part 2: Forward Propagation](https://i.ytimg.com/vi/UJwK6jAStmg/maxresdefault.jpg)](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 [Neural Networks Demystified Part 2: Forward Propagation](https://www.youtube.com/watch?v=UJwK6jAStmg?v=VID)
 
-##### Back Propagation 
+##### Back Propagation
 
 Backpropagation, an abbreviation for "backward propagation of errors", is a common method of training artificial neural networks used in conjunction with an optimization method such as gradient descent. It calculates the gradient of a loss function with respect to all the weights in the network, so that the gradient is fed to the optimization method which in turn uses it to update the weights, in an attempt to minimize the loss function.
 
@@ -145,22 +145,22 @@ Video:
 [![Neural Networks Demystified - Part 4: Backpropagation](https://i.ytimg.com/vi/GlcnxUlrtek/maxresdefault.jpg)](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
 [Neural Networks Demystified - Part 4: Backpropagation](https://www.youtube.com/watch?v=GlcnxUlrtek?v=VID)
 
-##### 1.2.1.5 Gradient Descent 
+##### 1.2.1.5 Gradient Descent
 
 Video:
 [![Neural Networks Demystified - Part 3: Gradient Descent](https://i.ytimg.com/vi/5u0jaA3qAGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 [Neural Networks Demystified - Part 3: Gradient Descent](https://www.youtube.com/watch?v=5u0jaA3qAGk?v=VID)
 
-### 1.3 Explain machine learning technologies 
+### 1.3 Explain machine learning technologies
 (supervised, unsupervised, reinforcement learning approaches).
 
 ##### 1.3.1. Explain the connection between Machine learning and Cognitive systems
 Reference: [Computing, cognition and the future of knowing](http://www.research.ibm.com/software/IBMResearch/multimedia/Computing_Cognition_WhitePaper.pdf)
 
-Machine learning is a branch of the larger discipline of Artificial Intelligence, which involves the design and construction of computer applications or systems that are able to learn based on their data inputs and/or outputs. The discipline of machine learning also incorporates other data analysis disciplines, ranging from predictive analytics and data mining to pattern recognition. And a variety of specific algorithms are used for this purpose, frequently organized in taxonomies, these algorithms can be used depending on the type of input required. 
+Machine learning is a branch of the larger discipline of Artificial Intelligence, which involves the design and construction of computer applications or systems that are able to learn based on their data inputs and/or outputs. The discipline of machine learning also incorporates other data analysis disciplines, ranging from predictive analytics and data mining to pattern recognition. And a variety of specific algorithms are used for this purpose, frequently organized in taxonomies, these algorithms can be used depending on the type of input required.
 
 Many products and services that we use every day from search-engine advertising applications to facial recognition on social media sites to “smart” cars, phones and electric grids are beginnin to demonstrate aspects of Artificial Intelligence. Most consist of purpose-built, narrowly focused applications, specific to a particular service. They use a few of the core capabilities of cognitive
-computing. Some use text mining. Others use image recognition with machine learning. Most are limited to the application for which they were conceived. 
+computing. Some use text mining. Others use image recognition with machine learning. Most are limited to the application for which they were conceived.
 
 Cognitive systems, in contrast, combine five core capabilities:
 - 1. They create deeper human engagement.
@@ -183,15 +183,15 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2.1. Supervised learning:
 
-- We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and output. 
+- We are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and output.
 
 ##### 1.3.2.1.1.Classification
 
-- In a classification problem we are trying to predict results in a discrete output. In other words we are trying to map input variables into categories. 
+- In a classification problem we are trying to predict results in a discrete output. In other words we are trying to map input variables into categories.
 
 ##### 1.3.2.1.2.Regression/Prediction
 
-- In a regression problem we are trying to predict results with a continous output meaning that we are trying to map input variables to some continous function. 
+- In a regression problem we are trying to predict results with a continous output meaning that we are trying to map input variables to some continous function.
 
 ##### 1.3.2.1.3.Semi-supervised learning
 
@@ -203,7 +203,7 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2.2.1.Artificial neural network
 
-- An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information. 
+- An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information.
 
 ##### 1.3.2.2.2.Association rule learning
 
@@ -218,7 +218,7 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2.2.4.Cluster analysis
 
-- Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). 
+- Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters).
 
 ##### 1.3.2.2.5.Outlier Detection
 
@@ -226,7 +226,7 @@ Many of these capabilities require specialized infrastructure that leverages hig
 
 ##### 1.3.2.3. Reinforcement learning
 
-- These algorithms choose an action, based on each data point and later learn how good the decision was. Over time, the algorithm changes its strategy to learn better and achieve the best reward. Thus, reinforcement learning is particularly well-suited to problems which include a long-term versus short-term reward trade-off. 
+- These algorithms choose an action, based on each data point and later learn how good the decision was. Over time, the algorithm changes its strategy to learn better and achieve the best reward. Thus, reinforcement learning is particularly well-suited to problems which include a long-term versus short-term reward trade-off.
 
 ### 1.4. Define a common set of use cases for cognitive systems.
 
@@ -237,7 +237,7 @@ Customer Call Centers
 - Automation: Customer/Technical Support Tickets Routing
 - Customer: Go Moment  
  - Problems Solved:
-  - a) Detect the topic of a ticket and route to the appropriate department to handle it 
+  - a) Detect the topic of a ticket and route to the appropriate department to handle it
   - b) room service, maintenance, housekeeping
   - c) Escalate support tickets based on customersentiment
   - d) Route support requests to agents that already solved similar problems by detecting natural language similarities between new customer tickets and resolved ones.
@@ -247,14 +247,14 @@ Physicians
 - Expert Advisor:
  - Example: Watson Discovery Advisor
  - Problem Solved: Provides relevant medical suggestions and insights in natural language so physicians can more accurately diagnose patients.
- - Services used: Conversation + natural language answer retrieval, entity extraction 
- 
+ - Services used: Conversation + natural language answer retrieval, entity extraction
+
 Social Media
 - Data Insights:
  - Partner: Ground Signal
  - Problem Solved: Extract useful insights from social media such as Instagram and Twitter by determining the content of photos and topics/sentiment of user posts.
  - Services used: keyword, entity, and sentiment/tone analysis
- 
+
 ### 1.5. Define Precision, Recall, and Accuracy.
 
 #### 1.5.1. [Precision:](#https://en.wikipedia.org/wiki/Precision_and_recall)
@@ -274,6 +274,14 @@ Positive/Negatives described above:
 [https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall)
 
 ### 1.6. Explain the importance of separating training, validation and test data.
+
+Performing supervised machine learning tasks we are interesting in making
+prediction about unseen data. Normally you have access to one training set, and
+one test set. The training set is the data that we want to learn from, and we
+want to generalize to the test set.
+
+![Image about overfitting](https://qph.ec.quoracdn.net/main-qimg-28d4d605380ee139f5079e18bacdf630)
+
 
 Normally to perform supervised learning you need two types of data sets:
  1. In one dataset (your "gold standard") you have the input data together with correct/expected output, This dataset is usually duly prepared either by humans or by collecting some data in semi-automated way. But it is important that you have the expected output for every data row here, because you need for supervised learning.
@@ -360,7 +368,7 @@ To answer correctly, we need to understand the intent behind the question, in or
   - Automation: “Schedule a meeting with Sue at 5pm next Tuesday.”
   - Declarative: “I need to change my password.”
   - Imperative: “Show me the directions to my the nearest gas station.”
-  
+
 ## Section 2 - Use Cases of Cognitive Services
 
 ### 2.1. Select appropriate combination of cognitive technologies based on use-case and data format.
@@ -369,7 +377,7 @@ To answer correctly, we need to understand the intent behind the question, in or
  - Data: customer emails
  - Services: Q&A, Text classification, entity extraction and, keyword extraction
  - Watson-specific: NLC, R&R, Alchemy Language
- 
+
 #### 2.1.2. Agent-assist for phone-based customer call center
  - Data: customer voice recordings
  - Services: Q&A, Speech recognition, text-to-speech, text classification, entity extraction, keyword extraction
@@ -379,7 +387,7 @@ To answer correctly, we need to understand the intent behind the question, in or
  - Data: natural language intents
  - Services: Q&A, Text classification, entity extraction and keyword extraction
  - Watson-specific: NLC, R&R, Alchemy Language
- 
+
 #### 2.1.4. Data insights for Instagram images
  - Data: images
  - Services: Image classification and natural OCR
@@ -389,11 +397,11 @@ To answer correctly, we need to understand the intent behind the question, in or
  - Data: tweets
  - Services: Text classification, entity extraction, keyword extraction
  - Watson-specific: NLC and Alchemy Language
- 
+
 ### 2.2. Explain the uses of the Watson services in the Application Starter Kits.
 ### 2.3. Describe the Watson Conversational Agent.
 
-For section 2.2 and 2.3, we deep dive into the Watson services currently available and stated in the study guide. By understanding the services individually, it will help with knowing what services would work for different scenarios. 
+For section 2.2 and 2.3, we deep dive into the Watson services currently available and stated in the study guide. By understanding the services individually, it will help with knowing what services would work for different scenarios.
 
 [You can view the list of Watson Starter Kits here](https://www.ibm.com/watson/developercloud/starter-kits.html)
 
@@ -530,7 +538,7 @@ JSON that provides a hierarchical representation of the analysis of the terms in
 
 Mored detailed documentation for [Tone Analyzer](https://www.ibm.com/watson/developercloud/doc/tone-analyzer/index.html)
 
-### [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/) 
+### [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/)
 Deprecated as of August 15, 2016 still in the test
 
 The IBM Watson Dialog service enables a developer to automate branching conversations between a user and your application. The Dialog service enables your applications to use natural language to automatically respond to user questions, cross-sell and up-sell, walk users through processes or applications, or even hand-hold users through difficult tasks. The Dialog service can track and store user profile information to learn more about end users, guide them through processes based on their unique situation, or pass their information to a back-end system to help them take action and get the help they need.
@@ -547,7 +555,7 @@ Script conversations based on your expert knowledge of the domain.
 
 End users can chat with your application using natural language and get the pre-written responses you created.
 
-More detailed documentation for [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/) 
+More detailed documentation for [Watson Dialog](https://www.ibm.com/watson/developercloud/doc/dialog/)
 
 ### [Tradeoff Analytics](https://www.ibm.com/watson/developercloud/doc/tradeoff-analytics/)
 
@@ -725,7 +733,7 @@ Recorded audio with Intelligible Speech
 Text transcriptions of the audio with recognized words
 
 ##### Continuous transmission
- 
+
 By default, the service stops transcription at the first end-of-speech (EOS) incident, which is denoted by a half-second of non-speech (typically silence) or when the stream terminates. Set the continuous parameter to true to instruct the service to transcribe the entire audio stream until the stream terminates. In this case, the results can include multiple transcript elements to indicate phrases separated by pauses. You can concatenate the transcript elements to assemble the complete transcription of the audio stream.
 
 More detailed documentation for [Speech to Text](https://www.ibm.com/watson/developercloud/doc/speech-to-text/)
@@ -783,29 +791,29 @@ Some examples are:
 - Describe the advantage and disadvantages of using an SDK
 - Find the Watson SDKs and other resources on the WDC GitHub
   - [Watson Developer Cloud Github](https://github.com/watson-developer-cloud/)
-  
+
 ###  3.4. Explain the Watson REST APIs available as part of the services on Watson Developer Cloud.
 
 - Identify the Language services on WDC
- - AlchemyLanguage 
- - Conversation 
- - Document Conversion 
- - Language Translator 
- - Natural Language Classifier 
- - Natural Language Understanding 
- - Personality Insights 
- - Retrieve and Rank 
+ - AlchemyLanguage
+ - Conversation
+ - Document Conversion
+ - Language Translator
+ - Natural Language Classifier
+ - Natural Language Understanding
+ - Personality Insights
+ - Retrieve and Rank
  - Tone Analyzer
 - Identify the Vision services on WDC
  - Visual Recognition
 - Identify the Speech services on WDC
- - Speech to Text 
+ - Speech to Text
  - Text to Speech
 - Identify the Data Insights services on WDC
- - AlchemyData News 
- - Discovery 
+ - AlchemyData News
+ - Discovery
  - Tradeoff Analytics
- 
+
 ###  3.5. Explain and configure Natural Language Classification.
 
 The service enables developers without a background in machine learning or statistical algorithms to interpret the intent behind text.
@@ -817,7 +825,7 @@ Configure:
 - Train an NLC classifier on your training dataset
 - Pass the user input to an NLC classifier
 - Determine the accuracy, precision, and recall of the NLC classifier using your test dataset
-- Improve the confidence level iteratively through back propagation or other means. 
+- Improve the confidence level iteratively through back propagation or other means.
 
 ###  3.6. Explain and configure Visual recognition.
 
@@ -865,7 +873,7 @@ Configure:
  - Create / update ground truth
  - Create and train Ranker
  - Evaluate result / update ground truth
- 
+
 ## Section 4 - Developing Cognitive applications using Watson Developer Cloud Services
 
 ###  4.1. Call a Watson API to analyze content.
@@ -934,7 +942,7 @@ Cognitive systems tend to gain more value as additional services are composed. W
 - Data Insights
  - Goal: Monitor all posts with specific keywords (e.g. for a company’s followers, sponsors, or critiques) to detect what’s being discussed and the sentiment/tone associated to it.
  - Services used: Keyword extraction, entity extraction, and sentiment/tone analysis (Alchemy Language)
- 
+
 ### 4.5. Design and execute a use case driven service choreography (within an API).
 
 - Natural Language Classifier
@@ -956,7 +964,7 @@ Cognitive systems tend to gain more value as additional services are composed. W
  - Extract link
  - Tag image
  - Detect text
- 
+
 ###  4.6. Deploy a web application to IBM Bluemix.
 
 - Configure application’s manifest to request the correct memory and app instance allocations
@@ -965,7 +973,7 @@ Cognitive systems tend to gain more value as additional services are composed. W
  - Install Cloud Foundry command line tools
  - Log-in to IBM Bluemix from the command line
  - Push the application to IBM Bluemix using the Cloud Foundry command line tools
- 
+
 ## Section 5 - Administration & DevOps for applications using IBM Watson Developer Cloud Services
 
 ### 5.1. Describe the process of obtaining credentials for Watson services.
@@ -997,5 +1005,3 @@ Cognitive systems tend to gain more value as additional services are composed. W
 - Filter logs
 - Configure external logs hosts
 - View logs from external logs hosts
-
-
